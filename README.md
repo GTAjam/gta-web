@@ -1,4 +1,8 @@
-### run project on local system
+### Running project
+
+```js
+    npm i
+```
 
 ```js
     npm run dev
