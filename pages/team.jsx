@@ -1,4 +1,5 @@
 import React from "react";
+import Member from "../components/team/member";
 
 const teamData = [{ name: "ABC" }];
 
