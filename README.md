@@ -1,1 +1,10 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+### run project on local system
+
+```js
+    npm run dev
+```
+
+### Instructions
+
+- Write good commit messages so others can understand
+- pull before starting work to minimize conflicts
