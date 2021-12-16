@@ -1,0 +1,33 @@
+.root {
+  min-height: 90vh;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 2em;
+
+    .list_group {
+      width: 100%;
+      margin: 0 auto;
+      margin: 4em 0;
+
+      @media screen and (min-width: 1024px) {
+        width: 40%;
+        margin: 0 4em;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
