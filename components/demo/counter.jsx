@@ -19,6 +19,7 @@ const Counter = ({ count, setCount }) => {
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>{count}</Card.Text>
+        {/* In classnames you can use regular bootstrap classnames for styling like mx-3 here */}
         <Button
           className="mx-3"
           onClick={() => {
