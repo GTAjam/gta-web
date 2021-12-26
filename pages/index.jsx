@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/navbar/navbar";
-import Footer from "../components/footer/footer";
 import Hero from "../components/hero/hero";
 import ProjectTrailer from "../components/projects/projectTrailer";
 import NewsCarousel from "../components/news/newsCarousel";
@@ -17,7 +15,6 @@ export default function Home() {
           crossorigin="anonymous"
         />
       </Head>
-
       <Hero />
       <ProjectTrailer />
       <NewsCarousel />
