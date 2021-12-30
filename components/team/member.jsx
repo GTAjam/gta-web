@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image"
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
@@ -81,11 +82,13 @@ const Member = (props) => {
 
       {/* Button */}
       <div className="text-center">
-        <a href="/team" className="button btn btn-lg btn-dark text-light" style={{ backgroundColor: "black", fontFamily: "Marcellus SC", border: "none", borderRadius: "0" }}>
-          <span className="btn btn-outline-light px-5" style={{ backgroundColor: "", color: "#b56d19", borderColor: "#b56d19" }}>
-            See More &nbsp;<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
-        </a>
+        <Link href="/team">
+          <a className="button btn btn-lg btn-dark text-light" style={{ backgroundColor: "black", fontFamily: "Marcellus SC", border: "none", borderRadius: "0" }}>
+            <span className="btn btn-outline-light px-5" style={{ backgroundColor: "", color: "#b56d19", borderColor: "#b56d19" }}>
+              See More &nbsp;<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+            </span>
+          </a>
+        </Link>
       </div>
 
     </div >
