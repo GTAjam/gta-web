@@ -172,6 +172,11 @@ const Team = () => {
 
   const [part5, setpart5] = useState([
     {
+      img: "/images/upasana.png",
+      text: "Upasna Chaudhary",
+      designation: "Web Developer",
+    },
+    {
       img: "/images/megha.png",
       text: "Megha Sinha",
       designation: "Web Developer",
