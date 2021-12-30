@@ -6,3 +6,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.box:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footerHeading:hover{
+  cursor: default;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.text:hover{
+  cursor: pointer;
+  transform: translate(2%);
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.icon:hover{
+  transform: scale(1.5);
+  filter: brightness(60%);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  // filter: brightness(60%);
+  transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 768px){
+
+  html{
+      font-size: 70%;    }
+  }
+
+  
+// .footerHeading::after{
+//   content: "";
+//   position: absolute;
+//   left: 0%;
+//   bottom: 0%;
+//   width: 0%;
+//   height: 2px;
+//   background-color: red;
+//   transition: width 0.5s;
+// }
+
+// .footerHeading:hover::after{
+//  width: 100%;
+// }
