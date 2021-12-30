@@ -5,7 +5,7 @@ const ProjectTrailer = () => {
   return (
     <div className="main">
       <h1>Projects</h1>
-      <div className="container">
+      <div className="contain">
         <div className="p1">
           <h2>Project One</h2>
           <img src="" alt="img" />
