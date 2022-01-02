@@ -1,17 +1,28 @@
 import React from "react";
+import bv from "./video/bv.mp4";
 
-const Hero = () => {
-  return (
-    <div>
-      <h1>GTA</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, natus
-        doloribus nam voluptatem accusantium quidem, beatae harum voluptate
-        dolorem fugiat iusto autem debitis cupiditate modi in praesentium,
-        provident vero officiis.
-      </p>
-    </div>
-  );
+const Element = () => {
+    
+    return(
+        <div className = "sec1" >
+            <video autoPlay loop muted
+                style={{
+                    position: "absolute",
+                    width: "100%",
+                    zIndex: "-1",
+                    top: 0,
+                    left: 0,
+                    height: "100vh",
+                    objectFit: "cover",
+                }}>
+                <source src={bv} type="video/mp4" />
+            </video>
+
+        </div>
+
+    );
+
+
 };
 
-export default Hero;
+export default Element;
