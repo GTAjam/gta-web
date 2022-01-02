@@ -1,7 +1,7 @@
 import React from "react";
 import bv from "./video/bv.mp4";
 
-const Element = () => {
+const Hero = () => {
 
     return (
         <div className="sec1" >
@@ -36,4 +36,4 @@ const Element = () => {
 
 };
 
-export default Element;
+export default Hero;
