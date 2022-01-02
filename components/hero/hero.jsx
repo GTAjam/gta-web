@@ -2,9 +2,9 @@ import React from "react";
 import bv from "./video/bv.mp4";
 
 const Element = () => {
-    
-    return(
-        <div className = "sec1" >
+
+    return (
+        <div className="sec1" >
             <video autoPlay loop muted
                 style={{
                     position: "absolute",
@@ -17,6 +17,17 @@ const Element = () => {
                 }}>
                 <source src={bv} type="video/mp4" />
             </video>
+
+            <div className="sec2"
+                style={{
+                    fontSize: "100px",
+                    marginTop: "300px"
+
+                }}>
+                WELCOME TO GTA
+
+
+            </div>
 
         </div>
 
