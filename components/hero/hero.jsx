@@ -1,5 +1,7 @@
 import React from "react";
 import bv from ".../public/bv.mp4";
+import Link from "next/link";
+
 
 const Hero = () => {
 
