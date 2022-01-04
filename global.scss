@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Loader Starts
 .loader{
   background-color: black;
   display: flex;
@@ -9,19 +17,10 @@
   width: 100%;
   height: 100vh;
 }
+// Loader Ends
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  // background-color: black;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // width: 100%;
-  // height: 100vh;
-}
 
+// Members Card Starts
 .box:hover{
   cursor: pointer;
   transform: scale(1.1);
@@ -52,6 +51,8 @@
   // filter: brightness(60%);
   transition: all 0.3s ease-in-out;
 }
+// Members Card Ends
+
 
 @media(max-width: 768px){
 
@@ -59,25 +60,12 @@
       font-size: 70%;    }
   }
 
-  
-// .footerHeading::after{
-//   content: "";
-//   position: absolute;
-//   left: 0%;
-//   bottom: 0%;
-//   width: 0%;
-//   height: 2px;
-//   background-color: red;
-//   transition: width 0.5s;
-// }
-
-// .footerHeading:hover::after{
-//  width: 100%;
-// }
-//projectTrailer.jsx css
 
 
 
+
+
+//projectTrailer Starts
 .main{
   display: flex;
   flex-direction: column;
@@ -105,4 +93,5 @@
   border: 1px solid black;
   border-radius: 0.8em;
 }
-//projectTrailer.jsx css ends here
+//projectTrailer Ends
+
