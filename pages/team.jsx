@@ -26,7 +26,7 @@ const Tab = styled(TabUnstyled)`
   justify-content: center;
 
   &:hover {
-    background-color: #ff8a65; //hover bg color
+    background-color: #ffab91; //hover bg color
   }
 
   &.${buttonUnstyledClasses.focusVisible} {
@@ -36,8 +36,8 @@ const Tab = styled(TabUnstyled)`
   }
 
   &.${tabUnstyledClasses.selected} {
-    background-color: #faf4f2; //active bg
-    color: #ff3d00; //active text color
+    background-color: #faf4f2; //active bg color
+    color: #ff7043; //active text color
   }
 
   &.${buttonUnstyledClasses.disabled} {
@@ -55,7 +55,7 @@ const TabPanel = styled(TabPanelUnstyled)`
 
 const TabsList = styled(TabsListUnstyled)`
   min-width: 320px;
-  background-color: #ff7043; //bg color
+  background-color: #ff8a65; //bg color
   border-radius: 8px;
   margin-bottom: 16px;
   display: flex;
