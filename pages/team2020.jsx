@@ -420,7 +420,7 @@ const Team = () => {
                         Video Editing Team
                     </h2>
 
-                    <div id="imgDiv" className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around" }}>
+                    <div id="imgDiv" className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginBottom: "2.5rem" }}>
                         {part6.map((images) => {
                             return (
                                 <>
