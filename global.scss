@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
 
 * {
   margin: 0;
@@ -7,14 +8,71 @@
   box-sizing: border-box;
 }
 
-//projectTrailer.jsx css
+// Loader Starts
+.loader{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+// Loader Ends
+
+
+// Members Card Starts
+.box:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footerHeading:hover{
+  cursor: default;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.text:hover{
+  cursor: pointer;
+  transform: translate(2%);
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.icon:hover{
+  transform: scale(1.5);
+  filter: brightness(60%);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  // filter: brightness(60%);
+  transition: all 0.3s ease-in-out;
+}
+// Members Card Ends
+
+
+@media(max-width: 768px){
+
+  html{
+      font-size: 70%;    }
+  }
+
+
+
+
+
+
+//projectTrailer Starts
 .main{
   display: flex;
   flex-direction: column;
   padding: 0.3em;
   text-align: center;
 }
-.container{
+.contain{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -46,5 +104,10 @@
   margin: 0.3em;
   border-radius: 0.5em;
 }
+<<<<<<< HEAD
 
 //projectTrailer.jsx css ends here
+=======
+//projectTrailer Ends
+
+>>>>>>> 5a6d809f00db15de771b4f3cd638c7ed2ae41989
