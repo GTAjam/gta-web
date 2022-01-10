@@ -58,10 +58,6 @@ const Member = (props) => {
         Team Members
       </h2>
 
-      {/* <h2 className="text-center" style={{ fontSize: "2.5rem", fontFamily: "Marcellus SC", fontWeight: "600", lineHeight: 1.2, color: "#c4cfde" }}>
-        Leaders
-      </h2> */}
-
       <div id="imgDiv" className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginBottom: "1rem" }}>
         {members.map((images) => {
           return (
