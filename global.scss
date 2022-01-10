@@ -80,26 +80,41 @@
 .contain{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding: 0.3em;
 }
-.p1, .p2{
-  margin: 0.5em;
-  padding: 0.5em;
-  background-color: olive;
+.project{
+  background-color: black;
+  color: white;
+  width: 330px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.project:hover{
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+}
+.project-image{
+  margin-bottom: 10px;
+  border-radius: 15px 15px 0px 0px;
 }
 .link{
   text-decoration: none;
-  color: black;
-}
-.butn{
+  color: white;
+  background-color: black;
   padding: 0.3em;
-  border: 1px solid black;
-  border-radius: 0.8em;
+  margin: 0.3em;
+  border-radius: 0.5em;
 }
+
+//projectTrailer.jsx css ends here
+// =======
 //projectTrailer Ends
 
+// <<<<<<< HEAD
 
 
 
@@ -187,3 +202,4 @@
 
 
 
+// >>>>>>> 5eb6a49c856764d2555f049ea363c3561fdd3b61
