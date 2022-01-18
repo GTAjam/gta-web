@@ -109,12 +109,8 @@
   margin: 0.3em;
   border-radius: 0.5em;
 }
-
 //projectTrailer.jsx css ends here
-// =======
-//projectTrailer Ends
 
-// <<<<<<< HEAD
 
 
 
@@ -122,6 +118,7 @@
 
 // back to top button starts
 .back-to-top {
+  z-index: 100;
   position: fixed;
   cursor: pointer;
   bottom: 20px;
@@ -162,44 +159,133 @@
 
 
 
-// .navbar-default .navbar-toggle:focus,
-// .navbar-default .navbar-toggle:hover {
-//     background-color: transparent;
-// }
-
-// .navbar-default .navbar-toggle {
-//     border: none;
-// }
-
-// .navbar-toggle span.icon-bar {
-//     transition: all 0.15s;
-// }
-
-// .navbar-toggle span:nth-child(2) {
-//     transform: rotate(45deg);
-//     transform-origin: 10% 10%;
-// }
-
-// .navbar-toggle span:nth-child(3) {
-//     opacity: 0;
-// }
-
-// .navbar-toggle span:nth-child(4) {
-//     transform: rotate(-45deg);
-//     transform-origin: 10% 90%;
-// }
-
-// .navbar-toggle.collapsed span:nth-child(2),
-// .navbar-toggle.collapsed span:nth-child(4) {
-//     transform: rotate(0);
-// }
-
-// .navbar-toggle.collapsed span:nth-child(3) {
-//     opacity: 1;
-// }
-
-
-
-
-
-// >>>>>>> 5eb6a49c856764d2555f049ea363c3561fdd3b61
+// navbar starts
+nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.1rem 0 3rem;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+nav .logo{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  // justify-content: center;
+  transform: translateY(25%);
+}
+nav ul li{
+  margin: 0 0.32rem;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 0.92rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #ea580c;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+nav .menu-btn .hamburger{
+  color: #fb923c;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-btn .hamburger2{
+  color: #fb923c;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:hover, .hamburger2:hover{
+  transform: scale(1.3);
+  filter: brightness(60%);
+  transition: all 0.2s ease-in-out;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn .hamburger{
+    display: block;
+  }
+  // #click:checked ~ .menu-btn .hamburger:before{
+  //   content: "\f00d";
+  // }
+  #click:checked ~ .menu-btn .hamburger{
+    display: none;
+  }
+  #click:checked ~ .menu-btn .hamburger2{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    // top: -10rem;
+    top: -16.8%;
+    left: -100%;
+    background: #111;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+  nav ul li a{
+    width: 100%;
+    // margin-left: -100%;
+    display: block;
+    margin-left: -11px;
+    color: #f2f2f2;
+    text-align: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul li a{
+    margin-left: -11px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #ea580c;
+    background: #fff;
+    font-weight: 900;
+  }
+}
+// navbar ends

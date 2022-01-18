@@ -27,12 +27,12 @@ const Footer = () => {
               <div className="row">
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h5 className="footerHeading mb-4" style={{ fontFamily: "Marcellus SC", fontWeight: "600", color: "#c4cfde" }}>GTA (Game To Aim)</h5>
-                  <p style={{ textAlign: "justify" }}>
+                  <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maiores possimus aliquid libero, commodi exercitationem facilis veritatis reiciendis veniam est.
                   </p>
                 </div>
 
-                <hr className="w-100 clearfix d-md-none" />
+                <hr className="clearfix d-md-none" style={{ width: "90%", margin: "auto" }} />
 
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                   <h5 className="footerHeading mb-4" style={{ fontFamily: "Marcellus SC", fontWeight: "600", color: "#c4cfde" }}>Quick Links</h5>
@@ -50,7 +50,7 @@ const Footer = () => {
                   </p>
                 </div>
 
-                <hr className="w-100 clearfix d-md-none" />
+                <hr className="clearfix d-md-none" style={{ width: "90%", margin: "auto" }} />
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h5 className="footerHeading mb-4" style={{ fontFamily: "Marcellus SC", fontWeight: "600", color: "#c4cfde" }}>Contact Us</h5>
@@ -60,7 +60,7 @@ const Footer = () => {
                   <p className="text"><FontAwesomeIcon icon={faPhoneAlt} style={{ color: "#c4cfde" }}></FontAwesomeIcon> &nbsp; + 01 234 567 89</p>
                 </div>
 
-                <hr className="w-100 clearfix d-md-none" />
+                <hr className="clearfix d-md-none" style={{ width: "90%", margin: "auto" }} />
 
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                   <h5 className="footerHeading mb-4" style={{ fontFamily: "Marcellus SC", fontWeight: "600", color: "#c4cfde" }}>Follow Us</h5>

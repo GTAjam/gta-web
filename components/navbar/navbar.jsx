@@ -1,32 +1,31 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faStream } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const navbar = () => {
   return (
-    /*Navbar*/
-    <nav className="navbar navbar-expand-lg navbar-dark">
-      <a className="navbar-brand" href="">GTA</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/team">Our Team</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/projects">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
+    <div>
 
-export default Navbar;
+      <nav>
+        <div className="logo" style={{ fontFamily: "Marcellus SC" }}>GameToAim <span className="text-orange-400">(GTA)</span></div>
+        <input type="checkbox" id="click" />
+        <label for="click" className="menu-btn">
+          <FontAwesomeIcon icon={faStream} className="hamburger"></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faTimes} className="hamburger2"></FontAwesomeIcon>
+        </label>
+        <ul style={{ fontFamily: "Roboto Condensed" }}>
+          <Link href="/"><li><a className="active" href="#">Home</a></li></Link>
+          <Link href="/about"><li><a href="#">About</a></li></Link>
+          <Link href="/projects"><li><a href="#">Projects</a></li></Link>
+          <Link href="/team"><li><a href="/team">Team</a></li></Link>
+          <li><a href="mailto:gtaclub2020@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div >
+  )
+}
+
+export default navbar
