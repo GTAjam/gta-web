@@ -26,7 +26,7 @@ const Hero = () => {
         lineHeight: "3.5rem"
       }}>
         <p style={{ fontSize: "5rem", fontFamily: "Marcellus SC", fontWeight: "900", letterSpacing: "1.5rem", color: "#fff" }}>GTA</p>
-        <p style={{ fontFamily: "Roboto Condensed", color: "#c4cfde", fontSize: "2rem" }}>(Welcome to the world of Game Development)</p>
+        <p className="text-center" style={{ fontFamily: "Roboto Condensed", color: "#c4cfde", fontSize: "2rem" }}>(Welcome to the world of Game Development)</p>
       </div>
 
     </div>

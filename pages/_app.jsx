@@ -9,6 +9,11 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 
+// import "~slick-carousel/slick/slick.css";
+// import "~slick-carousel/slick/slick-theme.css";
+
+
+
 
 export default function MyApp({ Component, pageProps }) {
 

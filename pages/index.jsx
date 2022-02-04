@@ -4,6 +4,7 @@ import ProjectTrailer from "../components/projects/projectTrailer";
 import NewsCarousel from "../components/news/newsCarousel";
 import Member from "../components/team/member";
 
+
 export default function Home() {
   return (
     <>
