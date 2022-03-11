@@ -164,11 +164,11 @@ const Project = ()=>{
      
      
       return(
-        <div className="center" style={{ backgroundColor: "#212428", flexDirection:"column" }}>
+        <div className="center" style={{ backgroundColor: "#212428", padding: "4.2rem 0rem",flexDirection:"column" }}>
 
-            <h2 className="text-center" style={{ fontSize: "3.5rem", fontFamily: "Marcellus SC", fontWeight: "600", lineHeight: 1.2, color: "#c4cfde" }}>
-              Our Projects
-            </h2>
+       <h2 className="text-center" style={{ fontSize: "3.5rem", fontFamily: "Marcellus SC", fontWeight: "600", lineHeight: 1.2, color: "#c4cfde" }}>
+           Our Projects
+       </h2>
             <div className="projectTrailer-main center">
                 {projects.map((projects)=>{
                     return(
