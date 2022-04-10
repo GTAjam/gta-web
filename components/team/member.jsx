@@ -51,7 +51,6 @@ const Member = (props) => {
 
   return (
 
-
     <div style={{ backgroundColor: "#212428", padding: "4rem 0rem" }}>
 
       <h2 className="text-center" style={{ fontSize: "3.5rem", fontFamily: "Marcellus SC", fontWeight: "600", lineHeight: 1.2, color: "#c4cfde" }}>
@@ -61,7 +60,7 @@ const Member = (props) => {
       <div id="imgDiv" className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginBottom: "1rem" }}>
         {members.map((images) => {
           return (
-            <div id="idNo" className="box card my-3 mx-4" id="imgCard" style={cardStyle}>
+            <div id="idNo imgCard" className="box card my-3 mx-4" style={cardStyle}>
               <Image src={images.img} className="card-img-top" alt="Image" width="100%" height="80%" layout="responsive" objectFit="cover" />
               <div className="card-body">
                 <h3 className="text-center text-light" style={{ fontFamily: "Marcellus SC" }}>

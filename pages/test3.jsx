@@ -1,72 +1,58 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-// import "swiper/components/effect-coverflow/effect-coverflow.min.css";
-// import "swiper/components/pagination/pagination.min.css";
-// import "swiper/components/navigation/navigation.min.css";
-// import "./styles.css";
-import SwiperCore, {
-    EffectCoverflow,
-    Pagination,
-    Navigation
-} from "swiper/core";
+// import React from 'react';
+// // import { ReactDOM } from 'react';
+// // import { render } from 'react-dom';
+// import ReactDOM from 'react-dom';
+// import { render } from 'react-dom';
 
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+// const test3 = () => {
+//     return (
+//         <div>
+//             <ButtonToolbar>
+//                 <IconButton icon={<AngleRightIcon />} onClick={() => handleOpen('left')}>
 
-export default function App() {
-    return (
-        // <body>
+//                 </IconButton>
+//                 <IconButton icon={<AngleLeftIcon />} onClick={() => handleOpen('right')}>
+//                     Right
+//                 </IconButton>
+//                 <IconButton icon={<AngleDownIcon />} onClick={() => handleOpen('top')}>
+//                     Top
+//                 </IconButton>
+//                 <IconButton icon={<AngleUpIcon />} onClick={() => handleOpen('bottom')}>
+//                     Bottom
+//                 </IconButton>
+//             </ButtonToolbar>
 
-        <div className="containers">
-            <div className="title_wrapper">
-                <div className="reactLogo">
-                    <img src="images/react.png" />
-                </div>
-                <div className="title_">
-                    <span>React</span>Swiper Slider
-                </div>
-            </div>
-            <Swiper
-                modules={[Navigation, Pagination, EffectCoverflow]}
+//             <Drawer full placement={placement} open={open} onClose={() => setOpen(false)}>
+//                 <Drawer.Header>
+//                     <Drawer.Title>Drawer Title</Drawer.Title>
+//                     <Drawer.Actions>
+//                         <Button onClick={() => setOpen(false)}>Cancel</Button>
+//                         <Button onClick={() => setOpen(false)} appearance="primary">
+//                             Confirm
+//                         </Button>
+//                     </Drawer.Actions>
+//                 </Drawer.Header>
+//                 <Drawer.Body>
+//                     <Paragraph rows={8} />
+//                 </Drawer.Body>
+//             </Drawer>
+//         </div>
+//     );
+// };
 
-                navigation={true}
-                effect={"coverflow"}
-                centeredSlides={true}
-                // slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
-                // slidesPerView={typeof window !== "undefined" ? (() => { window.innerWidth < 768 ? 1 : "auto" })() : "Error"}
-                loop={true}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true
-                }}
-                pagination={{
-                    clickable: true
-                }}
-                className="mySwiper"
-            >
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/mihir.png" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/megha.png" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/mihir.png" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/megha.png" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/mihir.png" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                    <img src="images/megha.png" />
-                </SwiperSlide>
-            </Swiper>
-        </div>
+// render(<test3 />)
+// // export default test3;
 
-        // </body>
-    );
-}
+
+// import React, { useRef } from "react";
+
+// export default function App() {
+//     const myContainer = useRef();
+//     console.log(myContainer.current);
+
+//     return (
+//         <>
+//             <div className=" mt-20" ref={myContainer}>I can use the DOM with react ref</div>
+//         </>
+//     );
+// }

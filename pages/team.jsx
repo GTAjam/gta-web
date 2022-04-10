@@ -314,7 +314,7 @@ const Team = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#212428", padding: "75px 0rem 4rem 0rem" }}>
+    <div style={{ backgroundColor: "#212428", padding: "75px 0rem 3rem 0rem" }}>
 
 
       <h2 className="text-center" style={{ fontSize: "3.5rem", fontFamily: "Marcellus SC", marginBottom: "2.5rem", fontWeight: "600", lineHeight: 1.2, color: "#c4cfde" }}>

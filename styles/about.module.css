@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.body {
+  background-color: #212428;
+  padding: 0 7rem
+}
+
+.container {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-family: Marcellus SC;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #c4cfde;
+  /* margin-bottom: 0; */
+  /* padding-top: 3rem; */
+  padding: 75px 0rem 0rem 0rem;
+}
+
+.question {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.answer {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 768px) {
+  .body{
+    padding: 0 1rem;
+  }
+
+  .container {
+    display: inline;
+    /* padding: 2rem 2rem; */
+  }
+
+  .question {
+    font-size: 0.8rem !important;
+  }
+
+  .answer {
+    font-size: 0.6rem !important;
+  }
+}

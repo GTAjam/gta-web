@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
-import "../global.scss";
+import "../styles/global.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
