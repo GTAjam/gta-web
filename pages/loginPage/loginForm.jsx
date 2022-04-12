@@ -6,7 +6,7 @@ import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 
 const show = (e) => {
-    alert("xyz");
+    alert("Sorry! You are not eligible to Login.");
     // e.preventDefault();
 }
 
